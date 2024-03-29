@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Fonts */
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: "Cormorant", serif; */
+/* Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--color-bg);
+}
+:root {
+  --color-bg: #1d2f30;
+  --color-bg-shade: #0b191a;
+  --color-green-bg: #bae249;
+  --color-gray: #899d9d;
+  --color-white: #fff;
+  --color-dark-green: #506829;
+}
+.white {
+  color: var(--color-white);
+}
+.dark-green {
+  color: var(--color-dark-green);
+}
+.black {
+  color: var(--color-bg-shade);
+}
+.h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+/* Setup */
+
+/* Header */
+.header {
+  display: flex;
+  min-height: 60px;
+  height: 60px;
+}
+.header > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 20px;
+  width: 65px;
+}
+.header__logo {
+  height: 20px;
+  width: 65px;
+}
+.header__navbar {
+  display: flex;
+  gap: 64px;
+}
+.header__navbar > a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.header__button {
+  display: flex;
+  gap: 64px;
+}
+.button__element_search {
+}
+.button__element_login {
+}
+/* Header */
+
+/* Hero */
+.hero {
+  height: 550px;
+  max-width: 1920px;
+  width: 100%;
+
+  background: url(/img/1_1.png);
+  background-position: center -60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.hero__title {
+  padding-top: 115px;
+  color: var(--color-white);
+  max-width: 688px;
+}
+.hero__subtitle {
+  padding-top: 16px;
+  color: var(--color-white);
+  max-width: 635px;
+}
+
+.hero__explore {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-green-bg);
+}
+/* Hero */
+
+/* Card */
+.card {
+  height: 555px;
+}
+.card__holder {
+  display: flex;
+  gap: 30px;
+
+  width: 100%;
+  height: 493px;
+}
+.card__element {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 255px;
+  border: 1px solid var(--color-bg-shade);
+}
+.plant__holder {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  background-color: var(--color-bg-shade);
+}
+.plant__image {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.plant__number {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  text-align: center;
+  top: 16px;
+  left: 16px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--color-gray);
+  border: 1px solid var(--color-gray);
+}
+.plant__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.plant__description {
+  height: 313px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 16px;
+}
+.plant__title {
+  color: var(--color-white);
+}
+.plant__subtitle {
+  color: var(--color-gray);
+}
+.plant__button {
+  color: var(--color-green-bg);
+  border: 2px solid;
+  height: 45px;
+  width: 145px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__switch {
+  margin: 0 auto;
+  padding-top: 26px;
+  width: 161px;
+  height: 36px;
+
+  display: flex;
+  align-items: baseline;
+  gap: 17px;
+}
+.arrow_left {
+  width: 30px;
+  height: 12px;
+}
+.switch__display {
+  font-size: 24px;
+  color: var(--color-white);
+  width: 51px;
+}
+.arrow_right {
+  width: 30px;
+  height: 12px;
+}
+/* Card */
+.newartf__title {
+  margin-bottom: 33px;
+}
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+.newartf {
+  padding-top: 57px;
+}
+.newcard {
+  display: flex;
+  gap: 15px;
+  height: 493px;
+}
+.newcard__element {
+  width: 100%;
+}
+.newcard__element_left > img {
+  width: 840px;
+  height: 100%;
+  user-select: none;
+  overflow-x: scroll;
+}
+.newcard__elememt_right {
+  background-color: var(--color-green-bg);
+  width: 100%;
+  height: 100%;
+  padding: 18px 16px;
+  position: relative;
+}
+.readnext {
+  position: absolute;
+  display: flex;
+  bottom: 25px;
+  gap: 8px;
+  justify-content: center;
+}
+.readtext__title {
+  font-weight: 700;
+}
+
+/*  */
+/*  */
+/*  */
+
+.support {
+  margin: 0 auto;
+  margin-top: 65px;
+  max-width: 1920px;
+  height: 463px;
+  width: 100%;
+  background: url(/img/4.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+.support > .wrapper {
+  padding: 55px 0;
+}
+.support__title {
+  color: var(--color-white);
+}
+.support__subtitle {
+  width: 839px;
+  padding-top: 19px;
+  color: var(--color-white);
+}
+.support__form {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input {
+  height: 45px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 350px;
+  padding: 11.5px 16px;
+
+  transition: all 0.25s ease-in-out;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input:not(:placeholder-shown) {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  border: none;
+  outline: solid var(--color-green-bg) 1px;
+  color: var(--color-bg-shade);
+  font-weight: 600;
+}
+input[type="text"]:hover::placeholder,
+input[type="email"]:hover::placeholder,
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
+  color: white;
+}
+
+input[type="submit"] {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-green-bg);
+  width: 145px;
+  font-size: 16px;
+  font-weight: 700;
+
+  outline: none;
+  border: none;
+}
+
+/*  */
+/*  */
+/*  */
+
+.socia-holder {
+  width: 100%;
+  background-color: var(--color-bg-shade);
+  height: 60px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.socia__icon {
+  width: 24px;
+  height: 24px;
+}
+.socia__icon:focus {
+  outline: solid var(--color-green-bg) 1px;
+}
+.copyright {
+  color: var(--color-gray);
+  text-align: center;
+  height: 22px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
